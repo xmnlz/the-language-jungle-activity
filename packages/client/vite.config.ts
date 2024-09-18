@@ -1,12 +1,14 @@
-import {defineConfig} from 'vite';
+import { defineConfig } from "vite";
 
 // https://vitejs.dev/config/
-export default defineConfig({
-  envDir: '../',
+export default {
+  base: "./",
+  envDir: "../../",
   server: {
+    port: 3000,
     proxy: {
-      '/api': {
-        target: 'http://localhost:3001',
+      "/api": {
+        target: "http://localhost:3001",
         changeOrigin: true,
         secure: false,
         ws: true,
@@ -16,4 +18,4 @@ export default defineConfig({
       clientPort: 443,
     },
   },
-});
+};

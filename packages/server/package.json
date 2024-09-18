@@ -1,0 +1,10 @@
+{
+  "name": "server",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "bun src/app.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1"
+  }
+}
